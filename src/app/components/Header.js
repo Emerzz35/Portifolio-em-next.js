@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <header className="bg-[#1A0B2E] text-white p-4 sticky top-0 z-50">
       <div className="container mx-auto flex justify-between items-center">
+        <Link href = "/" >
         <h1 className="text-xl font-bold">Meu Portfólio</h1>
+        </Link>
         <nav>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
@@ -22,7 +24,7 @@ const Header = () => {
               isOpen ? 'top-16' : '-top-96'
             } md:top-auto`}
           >
-            {['Home', 'Sobre', 'Skills', 'Projetos', 'Contato'].map((item) => (
+            {['Sobre', 'Skills', 'Projetos', 'Contato'].map((item) => (
               <li key={item} className="text-center py-2 md:py-0">
                 <Link href={`/${item.toLowerCase()}`} className="hover:text-gray-300 transition">
                   {item}
