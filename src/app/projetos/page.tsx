@@ -1,8 +1,6 @@
 import ProjectCard from "../components/ProjectCard";
 
 const Projetos = () => {
-  const skills = ["PHP", "JavaScript", "TypeScript", "React", "Next.js", "SQL", "Delphi", "Laravel","Pervasive","SQLServer", "Firbird","Postgres","Tailwindcss","bootstrap","Java","Inglês","HTML","CSS","POO","Git","Gitflow","Figma"];
-  
   return (
     <section className="flex justify-center items-center min-h-[80vh] p-6">
       <main className="bg-[#3A186A] text-white rounded-xl p-8 max-w-3xl w-full">
