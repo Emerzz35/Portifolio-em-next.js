@@ -41,46 +41,54 @@ const Contact = () => {
       </div>
 
       <div className="lg:w-1/3 bg-[#3A186A] p-6 rounded-lg shadow-lg">
-        <form className="flex flex-col space-y-4">
-          <div>
-            <label htmlFor="name" className="block text-sm font-medium mb-1">Nome</label>
-            <input
-              type="text"
-              id="name"
-              className="w-full px-4 py-2 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
-              placeholder="Seu nome"
-              required
-            />
-          </div>
+      <form
+        className="flex flex-col space-y-4"
+        action="https://formspree.io/f/mldjbzvw"
+        method="POST"
+      >
+        <div>
+          <label htmlFor="name" className="block text-sm font-medium mb-1">Nome</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            className="w-full px-4 py-2 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
+            placeholder="Seu nome"
+            required
+          />
+        </div>
 
-          <div>
-            <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
-            <input
-              type="email"
-              id="email"
-              className="w-full px-4 py-2 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
-              placeholder="Seu email"
-              required
-            />
-          </div>
+        <div>
+          <label htmlFor="email" className="block text-sm font-medium mb-1">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            className="w-full px-4 py-2 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
+            placeholder="Seu email"
+            required
+          />
+        </div>
 
-          <div>
-            <label htmlFor="message" className="block text-sm font-medium mb-1">Mensagem</label>
-            <textarea
-              id="message"
-              className="w-full px-4 py-2 h-32 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
-              placeholder="Sua mensagem"
-              required
-            ></textarea>
-          </div>
+        <div>
+          <label htmlFor="message" className="block text-sm font-medium mb-1">Mensagem</label>
+          <textarea
+            id="message"
+            name="message"
+            className="w-full px-4 py-2 h-32 rounded-lg bg-[#D3B4FF] text-black border border-gray-500 focus:outline-none focus:ring-2 focus:ring-[#7127BA]"
+            placeholder="Sua mensagem"
+            required
+          ></textarea>
+  </div>
 
-          <button
-            type="submit"
-            className="w-full bg-[#7127BA] text-white py-2 rounded-lg hover:bg-[#5A1E96] transition"
-          >
-            Enviar Mensagem
-          </button>
-        </form>
+  <button
+    type="submit"
+    className="w-full bg-[#7127BA] text-white py-2 rounded-lg hover:bg-[#5A1E96] transition"
+  >
+    Enviar Mensagem
+  </button>
+</form>
+
       </div>
     </div>
   );

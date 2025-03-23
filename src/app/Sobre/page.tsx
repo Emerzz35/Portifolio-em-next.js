@@ -11,7 +11,7 @@ const Sobre = () => {
             <div className="w-48 h-48 md:w-64 md:h-64 relative">
               <Image 
                 src="/perfil2.png" 
-                alt="Foto de Emily"
+                alt="Designed by  / Freepik"
                 width={256}
                 height={256}
                 className="rounded-lg"
